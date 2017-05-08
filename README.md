@@ -1,3 +1,3 @@
 # code-sniffer
 
-phpcs.xml template file for code sniffer that is using PSR-2 coding standard to validate the code
+Set of important files which are used to setup code sniffer in a php project
