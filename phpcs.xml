@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<ruleset name="PHP_CodeSniffer">
+ <description>The coding standard for PHP_CodeSniffer itself.</description>
+
+ <!--
+    All files in the current directory to be checked for coding standards
+ -->
+    <file>.</file>
+
+ <!--
+   The following tags are equivalent to the command line argument:
+   - - ignore=*/vendor/*,*/node_modules/*,*/public/ckeditor/*
+  -->
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/node_modules/*</exclude-pattern>
+    <exclude-pattern>*/public/ckeditor/*</exclude-pattern>
+ <!--
+    The following tag is equivalent to the command line argument -n
+ -->
+ <arg value="n"/>
+
+ <arg name="report" value="summary"/>
+ <!--
+   The following tag is equivalent to the command line argument - - extensions=php
+  -->
+ <arg name="extensions" value="php"/>
+
+ <!--
+    Including all sniffs in PSR2 Standard
+ -->
+    <rule ref="PSR2"/>
+</ruleset>
