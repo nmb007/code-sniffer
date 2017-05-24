@@ -1,5 +1,5 @@
 #!/bin/bash
-# PHP CodeSniffer pre-commit hook for git
+# pre-commit hook for git that executes php code sniffer and eslint
 #
 # @author Soenke Ruempler <soenke@ruempler.eu>
 # @author Sebastian Kaspari <s.kaspari@googlemail.com>
