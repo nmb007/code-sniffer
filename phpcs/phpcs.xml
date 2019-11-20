@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<ruleset name="PHP_CodeSniffer">
+ <description>The coding standard for PHP_CodeSniffer itself.</description>
+
+ <!--
+    All files in the current directory to be checked for coding standards
+ -->
+    <file>.</file>
+
+ <!--
+   The following tags are equivalent to the command line argument:
+   - - ignore=*/vendor/*,*/node_modules/*,*/public/ckeditor/*
+  -->
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/public/js/ckeditor/*</exclude-pattern>
+
+ <!--
+    The following tag is equivalent to the command line argument -n, i.e. do not print warnings
+ -->
+ <arg value="n"/>
+
+<!--
+    You can hard-code custom php.ini settings into your custom standard.
+    The following tag sets the memory limit to 64M, this is equivalent to -d
+ -->
+ <ini name="memory_limit" value="1024M"/>
+
+<!--
+   'checkstyle' reporting format has been set as it is compatible with Jenkins static analysis plugin 
+-->
+ <arg name="report" value="checkstyle"/>
+ <arg name="report-file" value="build/logs/checkstyle.xml"/>
+
+ <!--
+   The following tag is equivalent to the command line argument - -extensions=php
+  -->
+ <arg name="extensions" value="php"/>
+
+ <!--
+    Including all sniffs in PSR2 Standard
+ -->
+    <rule ref="PSR2"/>
+</ruleset>
