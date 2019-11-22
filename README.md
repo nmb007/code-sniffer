@@ -8,4 +8,4 @@ To run phpcs (PHP Code Sniffer), type the following command in your project root
 
 To run phpmd (PHP Mess Detector), type the following command in your project root directory (Considering you got phpmd.xml file located in the project root directory)
 
-    $ ./vendor/bin/phpmd ./ html phpmd.xml --reportfile build/logs/phpmd.html 
+    $ ./vendor/bin/phpmd ./ xml phpmd.xml --reportfile build/logs/phpmd.xml 
